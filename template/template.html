@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="Nazi Zombies: Portable Documentation" property="og:title" />
+<meta content="Official Mapping and Core documentation for the Quake project Nazi Zombies: Portable" property="og:description" />
+<meta content="https://docs.nzp.gay/" property="og:url" />
+<meta content="https://docs.nzp.gay/res/images/icon.webp" property="og:image" />
+<meta content="#6e0d00" data-react-helmet="true" name="theme-color" />
+<meta name="generator" content="pandoc">
+$for(author-meta)$
+<meta name="author" content="$author-meta$">$endfor$
+<title>$pagetitle$</title>
+<link rel="icon" href="../res/images/icon.webp">
+<link rel="stylesheet" href="../res/_reset.css">
+<link rel="stylesheet" href="../res/_variables.css">
+<link rel="stylesheet" href="../res/_variables.darkmode.css">
+<link rel="stylesheet" href="../res/_specific.css">
+<link rel="stylesheet" href="../res/_specific.darkmode.css">
+<link rel="stylesheet" href="../res/default.css">
+<link rel="stylesheet" href="../res/default.darkmode.css">
+<link rel="stylesheet" href="../res/_responsive.css">
+<!--<script src="shortcuts.js"></script>-->
+<script src="res/shortcuts_helper.js"></script>
+<script>(() => {
+  window.addEventListener('DOMContentLoaded', () => {
+    const tocToggledClass = 'toc_toggled';
+
+    document.body.querySelector('div#toc_toggler .toc_toggler_button').addEventListener('click', (event) => {
+      event.preventDefault();
+      document.body.classList.toggle(tocToggledClass);
+    });
+
+    document.body.querySelectorAll('a').forEach((element) => {
+      element.addEventListener('click', (event) => {
+        document.body.classList.remove(tocToggledClass);
+      });
+    });
+  });
+})()</script>
+</head>
+<body>
+$if(toc)$<div id="toc_toggler">
+<img src="../res/images/icon.webp" alt="NZ:P Icon">
+<button class="toc_toggler_button" title="Open Table of Contents"><span>&#9776;</span></button>
+<a href="#" title="Back to top"><span>&#8657;</span></a>
+</div>
+<nav id="toc">
+<div id="toc_inner">
+$toc$
+</div>
+</nav>$endif$
+<main id="content">
+<aside id="content_version">
+<div id="content_version_details">
+  <img src="../res/images/icon.webp" alt="NZ:P Icon">
+<div>
+<span id="content_version_heading">$pagetitle$</span>
+<span><strong><i>Call of Duty: Zombies</i> Recreation</strong></span>
+</div>
+</div>
+<div id="content_version_links">
+<span><strong><a href="../landing/index.html" rel="noopener noreferrer">Landing</a></strong> - <a href="https://github.com/nzp-team" target="_blank" rel="noopener noreferrer">GitHub Organization</a></span>
+<span><a href="https://github.com/nzp-team/nzportable/releases/latest" target="_blank" rel="noopener noreferrer">Download the latest available version</a> - <a href="https://nzp.gay/" target="_blank" rel="noopener noreferrer">Play in your Browser (WebGL)</a></span>
+</div>
+</aside>
+<a href="#" title="Back to top"><span>&#8657;</span></a>
+$body$
+</main>
+</body>
+</html>
