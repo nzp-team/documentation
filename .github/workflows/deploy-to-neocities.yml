@@ -1,5 +1,4 @@
 name: Deploy to neocities
-on: [push]
 # https://github.com/marketplace/actions/deploy-to-neocities
 # only run on changes to main. Use main or master depending on whatever your default branch is called.
 on:
@@ -21,10 +20,12 @@ jobs:
     # This example uses a Node.js toolchain to build a site
     - name: Install Pandoc
       run: |
-        apt update && apt install -y pandoc
+        sudo apt update
+        sudo apt install -y pandoc
     - name: Build Page
       working-directory: ./
       run: |
+        sudo -i
         ./generate_docs.sh
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
