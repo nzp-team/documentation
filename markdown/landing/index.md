@@ -16,6 +16,8 @@ This documentation is not designed to cover basic gameplay foundations such as t
 
 All documentation and media hosted is licensed under CC-BY-SA 4.0, with no exclusions or exceptions.
 
+![Nacht der Untoten](https://raw.githubusercontent.com/nzp-team/nzportable/main/screenshots/0.webp)
+
 ## Downloading Nazi Zombies: Portable
 
 At this current moment, no marked-stable builds of Nazi Zombies: Portable are made available. Instead, nightly builds on all platforms are released via GitHub releases, accessible [here](https://github.com/nzp-team/nzportable/releases/latest). This link will always take you to the latest release, identifiable via the build date in the release title.
