@@ -15,7 +15,7 @@ Nazi Zombies: Portable features purchaseable weapons off-the-wall in the same ve
 
 ### _Call of Duty_'s Defined Weapon Costs
 
-_Call of Duty: World at War_ and _Call of Duty: Black Ops_ use consistent prices for their off-the-wall weapons in game. These prices, sorted from lowest to highest, are as follows (any weapon not listed here is a weapon not available off-the-wall in an official capacity):
+_Call of Duty: World at War_ and _Call of Duty: Black Ops_ use consistent prices for their off-the-wall weapons in game. These prices, sorted from highest to lowest, are as follows (any weapon not listed here is a weapon not available off-the-wall in an official capacity):
 
 - Bowie Knife: `3000` points
 - Scoped Kar98k†: `1500` points
