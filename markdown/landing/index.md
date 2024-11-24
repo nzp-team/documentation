@@ -16,7 +16,15 @@ This documentation is not designed to cover basic gameplay foundations such as t
 
 All documentation and media hosted is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), with no exclusions or exceptions.
 
-![Nacht der Untoten](https://raw.githubusercontent.com/nzp-team/nzportable/main/screenshots/0.webp)
+## Game Screenshots
+
+![Nacht der Untoten - NZ:P Team](../res/images/demo_ndu.webp)
+
+![Warehouse - NZ:P Team](../res/images/demo_warehouse2.webp)
+
+![Hangar - Jacob G.](../res/images/demo_hangar.webp)
+
+![B1ooD Version 4 - BCDeshiG](../res/images/demo_b1oodv4.webp)
 
 ## Downloading Nazi Zombies: Portable
 
