@@ -3,10 +3,9 @@
 
 ## Introduction
 
-*Nazi Zombies: Portable* is build using many open source, well-documented tools as well as a boundation of already well-understood game architecture. This has significant benefit, as a lot of general ground about creating content for *NZ:P* has already been covered by *Quake* and *Half-Life* mapping/modding resources.
+*Nazi Zombies: Portable* is built using many open source, well-documented tools as well as a foundation of already well-understood game architecture. This has significant benefit, as a lot of general ground about creating content for *NZ:P* has already been covered by *Quake* and *Half-Life* mapping/modding resources.
 
 The *Nazi Zombies: Portable* makes no attempt to document a lot of these concepts as a result. There are much better, more comprehensive resources that you should follow instead. These are linked below, using Internet Archive dumps where possible.
-
 
 ## Links
 
