@@ -3,7 +3,7 @@
 
 ## About
 
-Welcome to the official Documentation landing page for Nazi Zombies: Portable, a _Call of Duty: Zombies_ remake running on several modified forks of the _Quake_ (1996) engine, licensed under GPLv2, with project assets under CC-BY-SA 4.0. The following platforms are supported:
+Welcome to the official Documentation landing page for Nazi Zombies: Portable, a _Call of Duty: Zombies_ remake running on several modified forks of the _Quake_ (1996) engine, licensed under the [GNU General Public License version 2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html), with project assets under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). The following platforms are supported:
 
 - Windows (2000 and above, x86 and x86_64)
 - Linux (x86, x86_64, arm, arm64, armhf)
@@ -14,7 +14,7 @@ Welcome to the official Documentation landing page for Nazi Zombies: Portable, a
 
 This documentation is not designed to cover basic gameplay foundations such as the Power-Up system, what Perk-A-Cola machines are, etc., as those are bases covered by the official [_Call of Duty_ Wiki](https://callofduty.fandom.com/wiki/Call_of_Duty_Wiki). Nazi Zombies: Portable goes to great efforts to achieve parity with it's gameplay features in such a way that makes content on said wiki valid and applicable to this project as well.
 
-All documentation and media hosted is licensed under CC-BY-SA 4.0, with no exclusions or exceptions.
+All documentation and media hosted is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), with no exclusions or exceptions.
 
 ![Nacht der Untoten](https://raw.githubusercontent.com/nzp-team/nzportable/main/screenshots/0.webp)
 
