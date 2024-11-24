@@ -36,6 +36,7 @@ Documentation and by extension headers/categories are a work in progress.
 
 ### General
 - [TrenchBroom Set-Up](../mapping/trenchbroom-setup.md)
+- [External References](../mapping/external-references.md)
 - [Customizing Mystery Box Weapons](../mapping/mbox2-format.md)
 - [Advanced Model Exporting](../mapping/model-exporting.md)
 
