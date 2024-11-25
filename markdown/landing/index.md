@@ -32,7 +32,7 @@ At this current moment, no marked-stable builds of Nazi Zombies: Portable are ma
 
 ## Core Documentation
 
-Core documents contain information about Nazi Zombies: Portable's internal design. They are not specifically relevant to custom content creators, though overlap will be present for map features that interact with NZ:P's QuakeC.
+Core documents contain information about Nazi Zombies: Portable's internal design. They may not be specifically relevant to custom content creators, though overlap will be present for map features that interact with NZ:P's QuakeC or for specialty features.
 
 - [Dedicated Server](../internal/dedicated-server.md)
 - [Weapon IDs](../internal/weapon-ids.md)
@@ -47,6 +47,7 @@ Documentation and by extension headers/categories are a work in progress.
 - [External References](../mapping/external-references.md)
 - [Customizing Mystery Box Weapons](../mapping/mbox2-format.md)
 - [Advanced Model Exporting](../mapping/model-exporting.md)
+- [Model Alpha Transparency](../mapping/alpha-transparency.md)
 
 ### Map Entities
 - [Barricades](../mapping/barricades.md)
