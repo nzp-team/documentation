@@ -28,6 +28,8 @@ Control over `perk_random` is done entirely via its `spawnflags`. Each `spawnfla
 
 If no `spawnflags` are selected, the Entity will [`objerror`](https://web.archive.org/web/20240212193953/https://quakewiki.org/wiki/objerror).
 
+There will be 64 attempts total to spawn a Perk-A-Cola given the specified `spawnflags`. An [`objerror`](https://web.archive.org/web/20240212193953/https://quakewiki.org/wiki/objerror) will be thrown reporting total failure if it can not accomplish this.
+
 ### Using Extended Perk-A-Cola Abilities
 
 ![If Deadshot Daiquiri is selected by `perk_random`, the existing Machine will teleport from behind the wall in the desired location.](../res/images/perk_random_repositioning.webp)
