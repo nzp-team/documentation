@@ -34,8 +34,14 @@ At this current moment, no marked-stable builds of Nazi Zombies: Portable are ma
 
 Core documents contain information about Nazi Zombies: Portable's internal design. They may not be specifically relevant to custom content creators, though overlap will be present for map features that interact with NZ:P's QuakeC or for specialty features.
 
-- [Dedicated Server](../internal/dedicated-server.md)
 - [Weapon IDs](../internal/weapon-ids.md)
+
+## Dedicated Server Documentation
+
+Documents relevant for those who are looking to host a dedicated server for Nazi Zombies: Portable.
+
+- [Dedicated Server Setup](../server/server-setup.md)
+- [Map Rotation & Voting](../server/map-rotation.md)
 
 ## Mapping & Modding Documentation
 
