@@ -14,7 +14,7 @@ Welcome to the official Documentation landing page for Nazi Zombies: Portable, a
 
 This documentation is not designed to cover basic gameplay foundations such as the Power-Up system, what Perk-A-Cola machines are, etc., as those are bases covered by the official [_Call of Duty_ Wiki](https://callofduty.fandom.com/wiki/Call_of_Duty_Wiki). Nazi Zombies: Portable goes to great efforts to achieve parity with it's gameplay features in such a way that makes content on said wiki valid and applicable to this project as well.
 
-All documentation and media hosted is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), with no exclusions or exceptions.
+All documentation and media hosted is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), with no exclusions or exceptions. You can contribute to the documentation by submitting a pull request to the [GitHub repository](https://github.com/nzp-team/documentation)
 
 ## Game Screenshots
 
