@@ -26,13 +26,15 @@ Saving a set of waypoints via this mode will generate a `.way` file within the m
 ## Special Waypoints
 
 Special Waypoint nodes are used in conjunction with a valid `func_nzp_door` to prevent zombies from attempting to path through currently closed doors.
-To do this, add a `wayTarget` ID to the door entity in Trenchbroom. Now when a waypoint is placed inside of this door within the waypoint editor, it can be selected and turned into a special node.
-Adjacent waypoints within the room can then be linked through this special node as normal.
+
+A valid `func_nzp_door` requires an ID to be set in the `wayTarget` entity field.
 
 ## Pathing Behaviour
 
-When creating waypoints, it is important to consider how zombies will path between each node and whether they will get stuck on any geometry on the way. When zombies reacquire a path to the player (Whether that be after hopping a barricade post-spawn, 
-or in attempt to find the player after they have teleported outside and back into the map.), they will do so via the closest waypoint node to them. This is also important to consider in maps with verticality, as the nearest node to the zombie may in fact be above or below
+Zombies will move along a path dictated by the mapper through connected waypoint nodes until they are within sight range to path to a player on their own (Where "Sight" is dictated by both the zombies shins and forehead being able to see the player).
+
+When zombies reacquire a path to the player (Whether that be after hopping a barricade post-spawn, or in attempt to find the player after they have teleported outside and back into the map.), 
+they will do so via the closest waypoint node to them. This is also important to consider in maps with verticality, as the nearest node to the zombie may in fact be above or below
 them - causing them to get stuck.
 
 ![An example of how waypoints should be laid out, arrows indicating that nodes are linked in both directions.](../res/images/example_waypoints.webp)
