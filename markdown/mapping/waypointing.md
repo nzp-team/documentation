@@ -14,14 +14,14 @@ Saving a set of waypoints via this mode will generate a `.way` file within the m
 
 ![(Left to right) Blue-Default, Yellow-Selected, Red-Linked to Current, Special-Used for Doors (Same 3 colours as previous). ](../res/images/waypoint_types.webp)
 
-| Actions | Keybinding | Description |
-|---|---|---| 
-| Create | Fire Weapon | Creates a default (blue) waypoint node at the players position. | 
-| Select | Interact | Selects waypoint node currently being aimed at. | 
-| Link | Aim Down Sights | Link selected (yellow) node to aimed at default (blue) node. | 
-| Remove | Melee | Deletes current selected (yellow) node. | 
-| Move | Next Weapon | Move current selected (yellow) node to player position. | 
-| Create Special | Reload | Converts selected (yellow) node to a special node. Must be adjacent to a valid `func_nzp_door`. | 
+| Actions | Description |
+|---|---| 
+| Create | Creates a default (blue) waypoint node at the players position. | 
+| Select | Selects waypoint node currently being aimed at. | 
+| Link  | Link selected (yellow) node to aimed at default (blue) node. | 
+| Remove  | Deletes current selected (yellow) node. | 
+| Move  | Move current selected (yellow) node to player position. | 
+| Create Special | Converts selected (yellow) node to a special node. Must be adjacent to a valid `func_nzp_door`. | 
 
 ## Special Waypoints
 
