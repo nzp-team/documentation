@@ -37,4 +37,4 @@ When zombies reacquire a path to the player (Whether that be after hopping a bar
 they will do so via the closest waypoint node to them. This is also important to consider in maps with verticality, as the nearest node to the zombie may in fact be above or below
 them - causing them to get stuck.
 
-![An example of how waypoints should be laid out, arrows indicating that nodes are linked in both directions.](../res/images/example_waypoints.webp)
+![Example map of connected waypoint nodes, arrows indicating that nodes are linked in both directions.](../res/images/example_waypoints.webp)
