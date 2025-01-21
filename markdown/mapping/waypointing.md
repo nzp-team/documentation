@@ -12,5 +12,27 @@ Saving a set of waypoints via this mode will generate a `.way` file within the m
 
 ## Interacting with Waypoints
 
-![Default control scheme for waypoint mode.](../res/images/waypoint_controls.png)
+![(Left to right) Blue-Default, Yellow-Selected, Red-Linked to Current, Special-Used for Doors (Same 3 colours as previous). ](../res/images/waypoint_types.webp)
 
+| Actions | Keybinding | Description |
+|---|---|---| 
+| Create | Fire Weapon | Creates a default (blue) waypoint node at the players position. | 
+| Select | Interact | Selects waypoint node currently being aimed at. | 
+| Link | Aim Down Sights | Link selected (yellow) node to aimed at default (blue) node. | 
+| Remove | Melee | Deletes current selected (yellow) node. | 
+| Move | Next Weapon | Move current selected (yellow) node to player position. | 
+| Create Special | Reload | Converts selected (yellow) node to a special node. Must be adjacent to a valid `func_nzp_door`. | 
+
+## Special Waypoints
+
+Special Waypoint nodes are used in conjunction with a valid `func_nzp_door` to prevent zombies from attempting to path through currently closed doors.
+To do this, add a `wayTarget` ID to the door entity in Trenchbroom. Now when a waypoint is placed inside of this door within the waypoint editor, it can be selected and turned into a special node.
+Adjacent waypoints within the room can then be linked through this special node as normal.
+
+## Pathing Behaviour
+
+When creating waypoints, it is important to consider how zombies will path between each node and whether they will get stuck on any geometry on the way. When zombies reacquire a path to the player (Whether that be after hopping a barricade post-spawn, 
+or in attempt to find the player after they have teleported outside and back into the map.), they will do so via the closest waypoint node to them. This is also important to consider in maps with verticality, as the nearest node to the zombie may in fact be above or below
+them - causing them to get stuck.
+
+![An example of how waypoints should be laid out, arrows indicating that nodes are linked in both directions.](../res/images/example_waypoints.webp)
