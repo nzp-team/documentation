@@ -10,6 +10,19 @@ _Nazi Zombies: Portable_ makes use of a waypointing system to define nodes that 
 Waypoints can be edited directly in-game via the waypoint editing mode, foregoing the need to recompile the map when creating or adjusting waypoints. This mode can be accessed via the command `waypoint_mode` cvar.
 Saving a set of waypoints via this mode will generate a `.way` file within the maps folder of NZ:P; a plain-text file containing data for each node.
 
+With `.way` files being plain-text, they can be opened in any text editor. Doing so will reveal the following data structure:
+
+![Data structure of a `.way` file when opened in a text editor.](../res/images/waypoint_plain_text.webp)
+
+| Data Identifier | Description |
+|---|---| 
+| Origin | The co-ordinates of the waypoint node. | 
+| ID | The numerical identifier of the waypoint node. |
+| Special | The associated `wayTarget` ID of a valid `nzp_func_door` that has been correctly linked to the waypoint node. | 
+| Target 1-8 | 8 Possible waypoint nodes that are connected to the waypoint node. | 
+
+Another limitation of the waypoint system is that there is a hard limit of 256 total nodes.
+
 ## Interacting with Waypoints
 
 ![(Left to right) Blue-Default, Yellow-Selected, Red-Linked to Current, Special-Used for Doors (Same 3 colours as previous). ](../res/images/waypoint_types.webp)
