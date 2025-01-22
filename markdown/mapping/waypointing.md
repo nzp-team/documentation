@@ -7,10 +7,12 @@
 
 _Nazi Zombies: Portable_ makes use of a waypointing system to define nodes that zombies may path between. This allows for a fairly simple and intuitive, albeit limited, way to allow mappers to create custom pathfinding for their maps.
 
-Waypoints can be edited directly in-game via the waypoint editing mode, foregoing the need to recompile the map when creating or adjusting waypoints. This mode can be accessed via the command `waypoint_mode` cvar.
-Saving a set of waypoints via this mode will generate a `.way` file within the maps folder of NZ:P; a plain-text file containing data for each node.
+Waypoints are edited directly in-game via a special Waypoint Mode, as opposed to creating them in the map editor. This mode can be accessed via `waypoint_mode` cvar.
+Saving a set of waypoints via this mode will generate a `.way` file within the maps folder of NZ:P, matching the original map file name. This `.way` file must be supplied alongside the original map file when sharing maps.
 
-With `.way` files being plain-text, they can be opened in any text editor. Doing so will reveal the following data structure:
+## .way Files
+
+Due to `.way` files being plain-text, they can be opened in any text editor. Doing so will reveal the following data structure:
 
 ![Data structure of a `.way` file when opened in a text editor.](../res/images/waypoint_plain_text.webp)
 
@@ -21,7 +23,7 @@ With `.way` files being plain-text, they can be opened in any text editor. Doing
 | Special | The associated `wayTarget` ID of a valid `nzp_func_door` that has been correctly linked to the waypoint node. | 
 | Target 1-8 | 8 Possible waypoint nodes that are connected to the waypoint node. | 
 
-Another limitation of the waypoint system is that there is a hard limit of 256 total nodes.
+Up to 256 total nodes are supported at this time. Additionally, when a node is deleted within waypoint mode, the ID it occupied within the `.way` will not be freed up for use by following nodes as they are created. This can be remidied by manually reassigning ID's via opening the file in a text editor.
 
 ## Interacting with Waypoints
 
@@ -40,7 +42,7 @@ Another limitation of the waypoint system is that there is a hard limit of 256 t
 
 Special Waypoint nodes are used in conjunction with a valid `func_nzp_door` to prevent zombies from attempting to path through currently closed doors.
 
-A valid `func_nzp_door` requires an ID to be set in the `wayTarget` entity field. Targetting this `wayTarget` within waypoint mode is as simple as placing a waypoint node within the door entity you have created, and creating a special entity
+A valid `func_nzp_door` requires an ID to be set in the `wayTarget` entity field. Targetting this `wayTarget` within waypoint mode is done via placing a waypoint node within the door entity you have created, and creating a special entity
 whilst this node is selected. Correct use of this function can be clarifyed by a console output.
 
 ## Pathing Behaviour
