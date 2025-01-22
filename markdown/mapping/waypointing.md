@@ -35,6 +35,6 @@ whilst this node is selected. Correct use of this function can be clarifyed by a
 Zombies will move along a path dictated by the mapper through connected waypoint nodes until they are within sight range to path to a player on their own (Where "Sight" is dictated by both the zombies shins, chest and forehead being able to see the player).
 
 When zombies reacquire a path to the player (Whether that be after hopping a barricade post-spawn, or in attempt to find the player after they have teleported outside and back into the map.), 
-they will do so via the closest waypoint node to them. There is however a heuristic cost, meaning zombies will attempt different paths via nodes if the closest node to them is not reachable.
+they will do so via the closest waypoint node to them. There is however a heuristic cost, meaning zombies will attempt different paths via alternate nodes if the closest node to them is not reachable.
 
 ![Example map of connected waypoint nodes, arrows indicating that nodes are linked in both directions.](../res/images/example_waypoints.webp)
