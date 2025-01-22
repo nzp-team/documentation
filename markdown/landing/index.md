@@ -55,6 +55,7 @@ Documentation and by extension headers/categories are a work in progress.
 - [Advanced Model Exporting](../mapping/model-exporting.md)
 - [Model Alpha Transparency](../mapping/alpha-transparency.md)
 - [Fog](../mapping/fog.md)
+- [Waypointing](../mapping/waypointing.md)
 
 ### Map Entities
 - [Barricades](../mapping/barricades.md)
