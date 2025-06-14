@@ -7,7 +7,7 @@
 
 _Nazi Zombies: Portable_ makes use of a waypointing system to define nodes that zombies may path between. This allows for a fairly simple and intuitive, albeit limited, way to allow mappers to create custom pathfinding for their maps.
 
-Waypoints are edited directly in-game via a special Waypoint Mode, as opposed to creating them in the map editor. This mode can be accessed by setting the `waypoint_mode` cvar or with `impulse 100`.
+Waypoints are edited directly in-game via a special Waypoint Mode, as opposed to creating them in the map editor. This mode can be accessed by setting the `waypoint_mode` cvar and restarting the level.
 Saving a set of waypoints via this mode will generate a `.way` file within the maps folder of NZ:P, matching the original map file name. This `.way` file must be supplied alongside the original map file when sharing maps.
 
 ![Waypoint Mode UI with waypoint nodes visible.](../res/images/waypoint_mode.webp)
