@@ -7,6 +7,7 @@ Welcome to the official Documentation landing page for Nazi Zombies: Portable, a
 
 - Windows (2000 and above, x86 and x86_64)
 - Linux (x86, x86_64, arm, arm64, armhf)
+- TI NSPIRE CX II
 - PlayStation Portable (all models)
 - PlayStation VITA
 - Nintendo 3DS (all models)
