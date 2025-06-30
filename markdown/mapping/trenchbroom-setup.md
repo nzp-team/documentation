@@ -7,7 +7,7 @@ This is a quick-start guide on installing the custom TrenchBroom profile for Naz
 
 This is not a guide on learning to use TrenchBroom or _Quake_ mapping. Please refer to the [Landing page](../landing/index.md#mapping-documentation) for resource links to these. Additionally, Trenchbroom version `v2024.1` is recommended for configuration file compatibility.
 
-If you are looking for Texture WADs, refer to the ones on our [asset repository](https://github.com/nzp-team/assets/tree/main/source/textures/wad), provided you agree and adhere to the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licensing.
+If you are looking for Texture WADs, you may download and use the ones from our [asset repository](https://github.com/nzp-team/assets/releases/download/newest/texture-wads.zip) (direct download), provided you agree and adhere to the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licensing.
 
 ## TrenchBroom Profile
 
