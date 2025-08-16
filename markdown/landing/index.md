@@ -31,6 +31,9 @@ All documentation and media hosted is licensed under [CC-BY-SA 4.0](https://crea
 
 At this current moment, no marked-stable builds of Nazi Zombies: Portable are made available. Instead, nightly builds on all platforms are released via GitHub releases, accessible [here](https://github.com/nzp-team/nzportable/releases/latest). This link will always take you to the latest release, identifiable via the build date in the release title.
 
+
+## [Downloading & Installing Maps in Nazi Zombies: Portable](../mapping/downloading-and-installing-maps.md)
+
 ## Core Documentation
 
 Core documents contain information about Nazi Zombies: Portable's internal design. They may not be specifically relevant to custom content creators, though overlap will be present for map features that interact with NZ:P's QuakeC or for specialty features.
