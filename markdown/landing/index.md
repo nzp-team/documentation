@@ -49,14 +49,18 @@ Documents relevant for those who are looking to host a dedicated server for Nazi
 These documents are relevant for level creators who wish to create content for Nazi Zombies: Portable. These documents assume you have basic knowledge of [mapping for Quake](https://www.youtube.com/playlist?list=PLgDKRPte5Y0AZ_K_PZbWbgBAEt5xf74aE), as well as [TrenchBroom](https://trenchbroom.github.io/) knowledge. Nazi Zombies: Portable also supports Valve HAMMER based mapping software via a separate FGD.
 Documentation and by extension headers/categories are a work in progress.
 
-### General
+### Tools
 - [TrenchBroom Set-Up](../mapping/trenchbroom-setup.md)
+- [NZ:P Toolbox](../mapping/toolbox.md)
+
+### General
 - [External References](../mapping/external-references.md)
 - [Customizing Mystery Box Weapons](../mapping/mbox2-format.md)
 - [Advanced Model Exporting](../mapping/model-exporting.md)
 - [Model Alpha Transparency](../mapping/alpha-transparency.md)
 - [Fog](../mapping/fog.md)
 - [Waypointing](../mapping/waypointing.md)
+- [Zoning](../mapping/zoning.md)
 
 ### Map Entities
 - [Barricades](../mapping/barricades.md)

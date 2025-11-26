@@ -5,7 +5,10 @@
 
 This is a quick-start guide on installing the custom TrenchBroom profile for Nazi Zombies: Portable in order to use its mapping toolset with the program, as well as a brief instructional on installing _Vluzcan's Half-Life Tools_, the `.BSP` compiler to use. Nazi Zombies: Portable relies on _Half-Life_ BSP type `30` as opposed to _Quake_ type `29`. 
 
-This is not a guide on learning to use TrenchBroom or _Quake_ mapping. Please refer to the [Landing page](../landing/index.md#mapping-documentation) for resource links to these. Additionally, Trenchbroom version `v2024.1` is recommended for configuration file compatibility.
+This is not a guide on learning to use TrenchBroom or _Quake_ mapping. Please refer to the [Landing page](../landing/index.md#mapping-documentation) for resource links to these. 
+
+**⚠️ Trenchbroom version `v2024.1` is required for configuration file compatibility. ⚠️**
+You can track Game Config compatibility via [TrenchBroom GitHub issue #4765](https://github.com/TrenchBroom/TrenchBroom/issues/4765).
 
 If you are looking for Texture WADs, you may download and use the ones from our [asset repository](https://github.com/nzp-team/assets/releases/download/newest/texture-wads.zip) (direct download), provided you agree and adhere to the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) licensing.
 
@@ -28,6 +31,12 @@ Once the `.ZIP` archive is downloaded, start TrenchBroom and locate `Preferences
 Inside of this directory, create a new one of your choice (`nzp` is likely preferred), and extract the TrenchBroom profile `.ZIP` contents inside of it. You should be left with a similar result to the screenshot showcased above -- an `nzp` directory where the contents contain `Icon.png`, `tb-nzp.fg`, and `GameConfig.cfg`. Installation should now be complete, verify that `NZP` is now present in TrenchBroom `Preferences` to confirm correct installation.
 
 ## Compiler Set-Up
+
+### Toolbox Support
+
+![Example of Map compilation with NZ:P Toolbox, Windows users should use `nzp.cmd` instead of `nzp` for _Tool Path_](../res/images/trenchbroom_toolbox_compilation.webp)
+
+If you are using [NZ:P Toolbox](toolbox.md), manually setting up map compilers is unnecessary. Toolbox can do everything for you in a single step, including building of Zone files. Below is a resource for manual compilation setup for those unwilling or unable to use Toolbox.
 
 ### Downloading
 
