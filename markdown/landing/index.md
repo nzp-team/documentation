@@ -70,7 +70,12 @@ Documentation and by extension headers/categories are a work in progress.
 - [Zombie Horde Points](../mapping/zombie-horde-points.md)
 - [Random Perk-A-Cola Machines](../mapping/random-perks.md)
 
+### Point Entities
+- [info_changesky](../mapping/info_changesky.md)
+- [game_screenflash](../mapping/game_screenflash.md)
+
 ### Map Triggers
+- [Trigger and Target Extensions](../mapping/trigger-extensions.md)
 - [trigger_setfire](../mapping/trigger_setfire.md)
 - [trigger_awardpoints](../mapping/trigger_awardpoints.md)
 - [trigger_interact](../mapping/trigger_interact.md)

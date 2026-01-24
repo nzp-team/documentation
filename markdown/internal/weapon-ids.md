@@ -57,6 +57,7 @@ Note that Pack-A-Punch variants of weapons do not contain a string identifier at
 - Panzerschreck - `panzerschreck` - `17`
 - Ray Gun - `ray_gun` - `20`
 - Wunderwaffe DG-2 - `wunderwaffe` - `56`
+- Ray Gun Mk II - `ray_gun_2` - `60`
 
 ## Pack-A-Punch Weapons
 
@@ -106,3 +107,4 @@ Note that Pack-A-Punch variants of weapons do not contain a string identifier at
 - Longinus (Panzerschreck) - `50`
 - The Krauss Refibrillator (Ballistic Knife) - `53`
 - Wunderwaffe DG-3 JZ (Wunderwaffe DG-2) - `57`
+- Porter's Mark II Ray Gun (Ray Gun Mk II) - `61`

@@ -13,6 +13,8 @@ Nazi Zombies: Portable features purchaseable weapons off-the-wall in the same ve
 
 `buy_weapon` triggers have three important fields. The weapon you wish to be purchaseable (`weapon`), the cost of the weapon (`cost`), and the cost of ammunition after initial weapon purchase (`cost2`).
 
+Using the _"Inactive until Triggered"_ spawnflag (`1`), you can disable the ability to purchase the off-the-wall weapon until it is activated via target.
+
 ### _Call of Duty_'s Defined Weapon Costs
 
 _Call of Duty: World at War_ and _Call of Duty: Black Ops_ use consistent prices for their off-the-wall weapons in game. These prices, sorted from highest to lowest, are as follows (any weapon not listed here is a weapon not available off-the-wall in an official capacity):
