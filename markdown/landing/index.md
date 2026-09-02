@@ -72,6 +72,7 @@ Documentation and by extension headers/categories are a work in progress.
 
 ### Point Entities
 - [info_changesky](../mapping/info_changesky.md)
+- [game_random](../mapping/game_random.md)
 - [game_screenflash](../mapping/game_screenflash.md)
 
 ### Map Triggers
