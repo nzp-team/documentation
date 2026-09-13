@@ -31,6 +31,7 @@ Note that Pack-A-Punch variants of weapons do not contain a string identifier at
 - MP40 - `mp40` - `15`
 - PPSh-41 - `ppsh` - `18`
 - Type 100 - `type_100` - `24`
+- MP5K - `mp5k` - `54`
 
 ### Shotguns
 
@@ -81,6 +82,7 @@ Note that Pack-A-Punch variants of weapons do not contain a string identifier at
 - 1001 Samurais (Type 100) - `39`
 - The Afterburner (MP40) - `40`
 - The Reaper (PPSh-41) - `48`
+- MP115 Kollider (MP5K) - `32`
 
 ### Shotguns
 
