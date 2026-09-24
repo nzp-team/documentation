@@ -36,6 +36,7 @@ At this current moment, no marked-stable builds of Nazi Zombies: Portable are ma
 Core documents contain information about Nazi Zombies: Portable's internal design. They may not be specifically relevant to custom content creators, though overlap will be present for map features that interact with NZ:P's QuakeC or for specialty features.
 
 - [Weapon IDs](../internal/weapon-ids.md)
+- [JSON Data-Driving](../internal/json.md)
 
 ## Dedicated Server Documentation
 
