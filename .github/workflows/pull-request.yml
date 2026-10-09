@@ -1,0 +1,71 @@
+name: Pull Request
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  resolve-toolbox:
+    name: Pull Toolbox
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.image.outputs.image }}
+    steps:
+      - name: Resolve Toolbox Image
+        id: image
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          set -euo pipefail
+          toolbox_image=$(sed -nE 's/^[[:space:]]*toolbox_image=([^[:space:]]+)[[:space:]]*$/\1/p' <<< "$PR_BODY" | head -n 1)
+          if [ -n "$toolbox_image" ]; then
+            if [[ ! "$toolbox_image" =~ ^ghcr\.io/[A-Za-z0-9-]+/toolbox(:[A-Za-z0-9_][A-Za-z0-9_.-]{0,127}|@sha256:[0-9a-f]{64})$ ]]; then
+              echo "Invalid Toolbox image: $toolbox_image" >&2
+              exit 1
+            fi
+            image="$toolbox_image"
+          else
+            image='ghcr.io/nzp-team/toolbox:main'
+          fi
+          echo "image=$image" >> "$GITHUB_OUTPUT"
+          echo "Toolbox Image: \`$image\`" >> "$GITHUB_STEP_SUMMARY"
+
+  build:
+    name: Build Documentation
+    needs: resolve-toolbox
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ needs.resolve-toolbox.outputs.image }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Toolbox Fetch
+        env:
+          TOOLBOX_HOST_OS: Linux
+          TOOLBOX_HOST_ARCH: x86_64
+        run: /entrypoint.sh fetch
+      - name: Select Merge Commit
+        env:
+          PR_MERGE_REF: ${{ github.ref }}
+          PR_MERGE_SHA: ${{ github.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git -C /workspace/repos/documentation fetch origin "$PR_MERGE_REF"
+          git -C /workspace/repos/documentation checkout --detach FETCH_HEAD
+          test "$(git -C /workspace/repos/documentation rev-parse HEAD)" = "$PR_MERGE_SHA"
+          test "$(git -C /workspace/repos/documentation rev-parse 'HEAD^2')" = "$PR_HEAD_SHA"
+          {
+            echo "Documentation PR head: \`$PR_HEAD_SHA\`"
+            echo "Tested merge commit: \`$PR_MERGE_SHA\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Build
+        run: /entrypoint.sh build-documentation
+      - name: Upload Preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-pr
+          path: /workspace/repos/documentation/build/
+          if-no-files-found: error
