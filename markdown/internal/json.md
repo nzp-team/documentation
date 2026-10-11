@@ -176,6 +176,14 @@ Weapon Upgrade is disabled by default. Its rotation chance is `1`, and it is ava
 
 * `round_health_cap` (number, default `0`): Stops zombie health scaling after the given round. `55` makes round 56 and later use round 55 health. `0` disables the cap.
 
+#### `zombie.despawn_distance`
+
+Distance from players, in Quake units, beyond which unseen zombies can despawn and respawn elsewhere (number, default `0`, disabled). Checked every 10 seconds. Looking toward a zombie prevents despawning at any distance. Crawlers are excluded; health and remaining round counts are preserved.
+
+#### `zombie.despawn_height`
+
+Height difference, in Quake units, beyond which unseen zombies can despawn even within `despawn_distance` (number, default `0`, height ignored). Requires distance despawning to be enabled. Looking toward a zombie still prevents despawning.
+
 #### `zombie.walk_styles`
 
 These booleans define which movement animations zombies may use. At least one must be `true`. If the preferred style is disabled, the zombie chooses the closest permitted style. Super sprint moves at 210 units per second.
