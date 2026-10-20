@@ -70,6 +70,7 @@ Documentation and by extension headers/categories are a work in progress.
 - [Wall Weapons](../mapping/wall-weapons.md)
 - [Zombie Horde Points](../mapping/zombie-horde-points.md)
 - [Random Perk-A-Cola Machines](../mapping/random-perks.md)
+- [func_nofalldamage](../mapping/func_nofalldamage.md)
 
 ### Point Entities
 - [info_changesky](../mapping/info_changesky.md)
@@ -85,3 +86,4 @@ Documentation and by extension headers/categories are a work in progress.
 - [trigger_awardpoints](../mapping/trigger_awardpoints.md)
 - [trigger_interact](../mapping/trigger_interact.md)
 - [trigger_atroundend](../mapping/trigger_atroundend.md)
+- [trigger_push](../mapping/trigger_push.md)
