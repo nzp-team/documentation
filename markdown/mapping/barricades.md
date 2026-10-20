@@ -25,6 +25,10 @@ For paths where a Zombie spawn point is directly in the view of a barricade, and
 
 For paths where the Zombie is expected to travel in a complicated route (e.g., around a bend), `path_corner` entities can be used the same way as _Quake_ to chain `target`s together and create a winding route.
 
+### Alternate Paths
+
+A single `spawn_zombie` can serve multiple barricades or entry points by setting `target`, `target2`, through `target8` to their `targetname`s. Each target can point directly to a barricade or to the first `path_corner` in a route. Each Zombie randomly chooses one of the spawn point's non-empty target keys when it spawns, with an equal chance for each key. Unused keys can be left empty, including gaps between keys. The chosen route then follows the usual `target` links; `path_corner` entities do not randomly choose alternate paths.
+
 ## Cosmetic Feature Set
 
 ### Sounds and Model
