@@ -14,7 +14,6 @@ Firing a trigger at an already used `trigger_interact` will reset it, allowing i
 
 | Field Name | Field ID | Default Value | Description |
 |---|---|---|---|
-| Field Name | Field ID | Default Value | Description |
 | Cost | `cost` | | Point cost for interacting with the trigger.
 | Usage String | `useprint_string_1` | | Custom usage string shown to the player when in range. `%b` will insert the use key icon per platform into the string. Example usage: `Hold %b to Activate Subroutine.`
 
