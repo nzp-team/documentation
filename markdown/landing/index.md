@@ -14,6 +14,7 @@ Welcome to the official Documentation landing page for Nazi Zombies: Portable, a
 - PlayStation 4
 - Nintendo 3DS (all models)
 - Nintendo Switch
+- Xbox (2001)
 
 This documentation is not designed to cover basic gameplay foundations such as the Power-Up system, what Perk-A-Cola machines are, etc., as those are bases covered by the official [_Call of Duty_ Wiki](https://callofduty.fandom.com/wiki/Call_of_Duty_Wiki). Nazi Zombies: Portable goes to great efforts to achieve parity with it's gameplay features in such a way that makes content on said wiki valid and applicable to this project as well.
 
