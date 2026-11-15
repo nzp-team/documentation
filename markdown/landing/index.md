@@ -11,6 +11,7 @@ Welcome to the official Documentation landing page for Nazi Zombies: Portable, a
 - PlayStation Portable (all models)
 - PlayStation VITA
 - PlayStation 2
+- PlayStation 3
 - PlayStation 4
 - Nintendo 3DS (all models)
 - Nintendo Switch
